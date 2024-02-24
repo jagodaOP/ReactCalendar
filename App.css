@@ -1,0 +1,68 @@
+/* App.css */
+
+/* General Styles */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #333; /* Dark grey background for the app */
+  color: #fff; /* White text for the app */
+}
+
+/* Calendar Styles */
+.Calendar {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%; /* Full width of the container */
+  background-color: #333; /* Dark grey background for the calendar */
+}
+
+.Calendar th,
+.Calendar td {
+  border: 1px solid #333; /* Borders match the background */
+  padding: 10px;
+  vertical-align: top; /* Align content to the top of the cell */
+}
+
+.Calendar th {
+  background-color: #333; /* Headers match the calendar background */
+  color: #fff; /* White text for headers */
+}
+
+.time {
+  background-color: #333; /* Time cells match the calendar background */
+  color: #fff; /* White text for time cells */
+}
+
+/* Event Styles */
+.Event {
+  min-height: 60px; /* Minimum height for event cells */
+  text-align: left; /* Align text to the left */
+  padding: 5px; /* Padding inside event cells */
+  color: white; /* White text for event titles */
+  border-radius: 4px; /* Optional: adds rounded corners to events */
+}
+
+/* Specific color overrides for events */
+.Event.red { background-color: #ff6f69; } /* Softer red for better contrast */
+.Event.blue { background-color: #6ec1e4; } /* Softer blue for better contrast */
+.Event.green { background-color: #83d0c9; } /* Softer green for better contrast */
+.Event.purple { background-color: #b79ced; } /* Softer purple for better contrast */
+.Event.silver { background-color: #a8a8a8; } /* Silver, adjusted for better contrast */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Calendar th, .Calendar td {
+    padding: 5px; /* Smaller padding for mobile */
+  }
+
+  .Calendar th {
+    font-size: 0.8em; /* Smaller font size for headers on mobile */
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #333; /* Ensure the body has the same background color */
+}
